@@ -22,12 +22,12 @@ class App extends Component {
         });
       });
   }
-  addToCart(item) {
+  addToCart=(item)=> {
     this.setState({
       cart: [...this.state.cart, item]
     });
   }
-  removeFromCart(index) {
+  removeFromCart=(index)=> {
     let cartCopy = this.state.cart.slice();
     cartCopy.splice(index, 1);
     this.setState({
