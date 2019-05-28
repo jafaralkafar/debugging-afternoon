@@ -34,11 +34,11 @@ class App extends Component {
       cart: cartCopy
     });
   }
-  navigate(location) {
+  navigate=(location)=> {
     if (location === "cart") {
-      this.state.showCart = true;
+      this.setState({showCart: true})
     } else {
-      this.state.showCart = false;
+      this.setState({showCart: false})
     }
   }
   render() {
